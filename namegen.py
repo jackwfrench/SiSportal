@@ -9,6 +9,8 @@ names = [
 def pw_generator(size=5, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
+house_select = ['Ma', 'Mc', 'Ri', 'Ad', 'Ho', 'Li', 'Wa', 'Ch']
+house_group_select = [1, 2, 3, 4, 5, 6, 7]
 
 years = [2017, 2018, 2019, 2020, 2021, 2022]
 i = 0
@@ -21,6 +23,12 @@ for i in range(1000):
     user_name = '520' + lastname[:4].lower() + firstname[:4].lower()
     pass_word = pw_generator().lower()
     grad_year = random.choice(years)
+    prefix_select = ['Mr', 'Miss', 'Mrs', 'Ms']
+    house = random.choice(house_select)
+    house_group = random.choice(house_group_select)
+    photo_url = '/image/profile-pic' + str(studentID)
+    email = user_name +'@shalomcollege.com'
+    prefix = ''
     year = random.choice(range(1999, 2006))
     month = random.choice(range(1, 13))
     day = random.choice(range(1, 29))
@@ -28,6 +36,7 @@ for i in range(1000):
     if random.randint(0,100) < 5:
         teacher_status = 1
         grad_year = 0
+        prefix = random.choice(prefix_select)
         year = random.choice(range(1955, 1993))
         dob = str(year) + '-' + str(month) + '-' + str(day)
     else:
@@ -36,5 +45,5 @@ for i in range(1000):
         admin_status = 1
     else:
         admin_status = 0
-    print ((studentID, user_name, pass_word, firstname, lastname, grad_year, dob, teacher_status, admin_status), end='')
+    print ((studentID, user_name, firstname, lastname, prefix, pass_word, dob, grad_year, house, house_group, teacher_status, admin_status, photo_url, email), end='')
     print (',')
