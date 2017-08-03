@@ -13,11 +13,11 @@ house_select = ['Ma', 'Mc', 'Ri', 'Ad', 'Ho', 'Li', 'Wa', 'Ch']
 house_group_select = [1, 2, 3, 4, 5, 6, 7]
 
 years = [2017, 2018, 2019, 2020, 2021, 2022]
-i = 0
+x = 259
 
-for i in range(1000):
-    i += 1
-    studentID = i
+for i in range(7):
+    x += 1
+    studentID = x
     firstname = random.choice(names)
     lastname = random.choice(names)
     user_name = '520' + lastname[:4].lower() + firstname[:4].lower()
@@ -45,5 +45,5 @@ for i in range(1000):
         admin_status = 1
     else:
         admin_status = 0
-    print ((studentID, user_name, firstname, lastname, prefix, pass_word, dob, grad_year, house, house_group, teacher_status, admin_status, photo_url, email), end='')
+    print ((studentID, user_name, firstname, lastname, prefix, pass_word, dob, grad_year, house, house_group, 1, 1, photo_url, email), end='')
     print (',')
