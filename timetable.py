@@ -27,10 +27,19 @@ for i in range(4):
 for numbers in ids:
     users.append(int(numbers))
 
-"""
-for i in range(35):
-    print((users[i], 9, mysubject[0], mysubject[1], mysubject[2], mysubject[3]), end='')
-    print(',')
-"""
 
-print(localsubjects)
+for i in range(35):
+    print((users[i], localsubjects[0]), end='')
+    print(',')
+    print((users[i], localsubjects[1]), end='')
+    print(',')
+    print((users[i], localsubjects[2]), end='')
+    print(',')
+    print((users[i], localsubjects[3]), end='')
+    print(',')
+    print((users[i], localsubjects[4]), end='')
+    print(',')
+    print((users[i], localsubjects[5]), end='')
+    print(',')
+    print((users[i], localsubjects[6]), end='')
+    print(',')

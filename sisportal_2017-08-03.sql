@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.6.28)
 # Database: sisportal
-# Generation Time: 2017-08-03 10:59:56 +0000
+# Generation Time: 2017-08-03 11:01:45 +0000
 # ************************************************************
 
 
@@ -141,12 +141,6 @@ CREATE TABLE `notices` (
   `activity` varchar(100) NOT NULL,
   `notice_comment` varchar(1000) NOT NULL,
   `through_date` date NOT NULL,
-  `y7` int(1) DEFAULT NULL,
-  `y8` int(1) DEFAULT NULL,
-  `y9` int(1) DEFAULT NULL,
-  `y10` int(1) DEFAULT NULL,
-  `y11` int(1) DEFAULT NULL,
-  `y12` int(1) DEFAULT NULL,
   PRIMARY KEY (`noticeID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
