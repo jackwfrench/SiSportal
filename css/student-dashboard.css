@@ -1,0 +1,60 @@
+#navbar-top {
+  border-radius: 0px;
+  background-color: #337ab7;
+  border: none;
+}
+
+#logo-image {
+  width: 100px;
+  margin-top: -15px;
+}
+
+#nav-text {
+  color: #ffffff;
+}
+
+#nav-text:hover {
+  font-size: 15px;
+}
+
+#dashboard-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dash-box {
+  height: 200px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+#small-box-group {
+  margin-top: 12px;
+}
+
+#profile-image {
+  display: block;
+  width: 159px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-rows {
+  margin-top: 4px;
+  height: 40px;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.box-rows-1 {
+  margin-top: 6px;
+  height: 20px;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}

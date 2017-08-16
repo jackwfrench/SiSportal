@@ -1,29 +1,18 @@
-<?php include("include.php"); ?>
-</head>
-<body>
-  <div class="col-md-4 col-md-offset-4">
-  		<section>
-  			<div class="panel panel-default top caja">
-  			  <div class="panel-body">
-  			    <h3 class="text-center">Admin Login</h3>
+<?php require("include.php"); ?>
+<link rel='stylesheet' type='text/css' href='css/login.css'/>
+  </head>
+  <body>
+    <div class = "container">
+    	<div class="wrapper">
+    		<form action="" method="post" name="Login_Form" class="form-signin">
+    		    <h3 class="form-signin-heading"><img src='images/logo.png'/></h3>
 
-  			    <form>
-  			    	<div class="input-group input-group-lg">
-  					  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-  					  <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-describedby="sizing-addon1" required>
-  					</div>
-  					<br>
-  					<div class="input-group input-group-lg">
-  					  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
-  					  <input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1" required>
-  					</div>
-  					<br>
-  					 <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+    			  <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
+    			  <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>
 
-  			    </form>
-  			  </div>
-  			</div>
-  		</section>
-  	</div>
-</body>
+    			  <button class="login-btn btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit"><span id='login-txt'>Login</span></button>
+    		</form>
+    	</div>
+    </div>
+  </body>
 </html>
