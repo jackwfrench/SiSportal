@@ -48,7 +48,7 @@
   height: 40px;
   max-width: 100%;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .box-rows-1 {
@@ -56,5 +56,5 @@
   height: 20px;
   max-width: 100%;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 2px;
 }
