@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   if(isset($_SESSION['username'])) {
     if($password_input == $_SESSION['password']) {
       if($_SESSION["teacher_status"] == 1){
-        header('Location: teacher-home.php');
+        header('Location: teacher-dashboard.php');
       }
       else {
         header("Location: student-dashboard.php");

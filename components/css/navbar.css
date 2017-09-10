@@ -1,0 +1,18 @@
+#navbar-top {
+  border-radius: 0px;
+  background-color: #337ab7;
+  border: none;
+}
+
+#logo-image {
+  width: 100px;
+  margin-top: -15px;
+}
+
+#nav-text {
+  color: #ffffff;
+}
+
+#nav-text:hover {
+  font-size: 15px;
+}

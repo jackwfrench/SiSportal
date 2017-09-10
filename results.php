@@ -16,8 +16,9 @@ checkUser();
   <thead>
   <tr>
     <th>Class</th>
-    <th>activity</th>
-    <th>Description</th>
+    <th>Assesment Name</th>
+    <th>Date Given</th>
+    <th>Date Due</th>
   </tr>
   </thead>
   <tbody>
@@ -25,12 +26,13 @@ checkUser();
     $stmt = $pdo->query("SELECT classcode from student_subject where userID=".$_SESSION['userID']."");
 
     while ($row = $stmt->fetch()) {
-      $stmt2 = $pdo->query("SELECT * from activity where classcode=".'"'.$row[classcode].'"');
+      $stmt2 = $pdo->query("SELECT * from assesment where classcode=".'"'.$row[classcode].'"');
 
       while ($row2 = $stmt2->fetch()) {
-        echo ("<tr><th>".$row2['classcode']."</th><th>".$row2['activity_name']."</th><th>".$row2['activity_desc']."</th></tr>");
+        echo ("<tr><th>".$row2['classcode']."</th><th><a href='viewresult.php?assesmentID=".$row2['assesmentID']."'>".$row2['assesment_name']."</a></th><th>".$row2['date_given']."</th><th>".$row2['date_due']."</th></tr>");
       }
     }
+
     ?>
   </tbody>
   </table>

@@ -10,11 +10,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a id='nav-text' href="student-dashboard.php">Dashboard</a></li>
-        <li><a id='nav-text' href="activity.php">Activities</a></li>
+        <li><a id='nav-text' href="teacher-dashboard.php">Dashboard</a></li>
         <li><a id='nav-text' href="timetable.php">Timetable</a></li>
+        <li><a id='nav-text' href="students.php">Students</a></li>
         <li><a id='nav-text' href="notices.php">Notices</a></li>
-        <li><a id='nav-text' href="results.php">results</a></li>
+        <li><a id='nav-text' href="Assesment.php">Assesment</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a id='nav-text' href="<?php echo "login.php";?>">Logout</a></li>

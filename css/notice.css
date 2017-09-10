@@ -1,0 +1,21 @@
+#post-notice {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#notice-title {
+  margin-left: 20px;
+}
+
+#desc-box {
+  padding: 20 0 400px 10;
+}
+
+#button-submit {
+  margin-top: 10px;
+}
+
+#table-main {
+  margin-left: 30px;
+  padding-right: 30px;
+}
