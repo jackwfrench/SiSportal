@@ -1,4 +1,7 @@
-<?php require("include.php"); ?>
+<?php
+session_destroy();
+require("include.php");
+?>
 <link rel='stylesheet' type='text/css' href='css/login.css'/>
   </head>
   <body>

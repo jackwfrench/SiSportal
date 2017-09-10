@@ -10,15 +10,14 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a id='nav-text' href="#">Dashboard</a></li>
+        <li><a id='nav-text' href="<?php if($_SESSION['teacher_status'] == 1){echo "teacher-dashboard.php";} else {echo"student-dashboard.php";}?>">Dashboard</a></li>
         <li><a id='nav-text' href="#">Activities</a></li>
         <li><a id='nav-text' href="#">Timetable</a></li>
         <li><a id='nav-text' href="#">Notices</a></li>
         <li><a id='nav-text' href="#">Results</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a id='nav-text' href="#">Logout</a></li>
+        <li><a id='nav-text' href="<?php echo "login.php";?>">Logout</a></li>
       </ul>
     </div>
   </div>

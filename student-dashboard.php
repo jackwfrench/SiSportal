@@ -1,14 +1,11 @@
 
 <?php
 session_start();
-if (isset($_SESSION['username'])) {
-  header('Location: login.php');
-}
-elseif ($_SESSION['teacher_status'] = 1) {
-  header('Location: teacher-dashboard.php');
-}
-require('include.php');
+require('functions.php');
 require('dbc.php');
+include('include.php');
+
+checkUser();
 
 //Data from database
 $stmt = $pdo->query("SELECT * from time_table where userID=".$_SESSION['userID']."");
@@ -30,9 +27,37 @@ $day7 = array($subjects[24], $subjects[25], $subjects[26], $subjects[27]);
 $day8 = array($subjects[28], $subjects[29], $subjects[30], $subjects[31]);
 $day9 = array($subjects[32], $subjects[33], $subjects[34], $subjects[35]);
 
-include("dayroll.php");
+if (date( "w", $timestamp) == 0) {
+  $subjectday = $day1;
+}
+if (date( "w", $timestamp) == 1) {
+  $subjectday = $day2;
+}
+if (date( "w", $timestamp) == 2) {
+  $subjectday = $day3;
+}
+if (date( "w", $timestamp) == 3) {
+  $subjectday = $day4;
+}
+if (date( "w", $timestamp) == 4) {
+  $subjectday = $day5;
+}
+if (date( "w", $timestamp) == 5) {
+  $subjectday = $day6;
+}
+if (date( "w", $$timestamp) == 6) {
+  $subjectday = $day7;
+}
 
+//subjects
+$stmt2 = $pdo->query("SELECT classcode from student_subject where userID=".$_SESSION['userID']."");
 
+$subjects2 = array();
+
+//Timetable
+while ($row2 = $stmt2->fetch()) {
+  array_push($subjects2, $row2['classcode']);
+}
 
 ?>
 <link rel='stylesheet' type='text/css' href='css/student-dashboard.css'/>
@@ -47,41 +72,41 @@ include("dayroll.php");
       <div id='dash-box' class='col-md-4'>
         <div id='small-box-group'>
           <div class='box-rows'>
-            <p></p>
+            <p><strong>P1:</strong> <?php print_r($subjectday[0]);?></p>
           </div>
           <div class='box-rows'>
-            <p></p>
+            <p><strong>P2:</strong> <?php print_r($subjectday[1]);?></p>
           </div>
           <div class='box-rows'>
-            <p></p>
+            <p><strong>P3:</strong> <?php print_r($subjectday[2]);?></p>
           </div>
           <div class='box-rows'>
-            <p></p>
+            <p><strong>P4:</strong> <?php print_r($subjectday[3]);?></p>
           </div>
       </div>
     </div>
     <div id='dash-box' class='col-md-4'>
       <div id='small-box-group'>
         <div class='box-rows-1'>
-          <p></p>
+          <p>1: <?php print_r($subjects2[0]); ?></p>
         </div>
         <div class='box-rows-1'>
-          <p></p>
+          <p>2: <?php print_r($subjects2[1]); ?></p>
         </div>
         <div class='box-rows-1'>
-          <p></p>
+          <p>3: <?php print_r($subjects2[2]); ?></p>
         </div>
         <div class='box-rows-1'>
-          <p></p>
+          <p>4: <?php print_r($subjects2[3]); ?></p>
         </div>
         <div class='box-rows-1'>
-          <p></p>
+          <p>5: <?php print_r($subjects2[4]); ?></p>
         </div>
         <div class='box-rows-1'>
-          <p></p>
+          <p>6: <?php print_r($subjects2[5]); ?></p>
         </div>
         <div class='box-rows-1'>
-          <p></p>
+          <p>7: <?php print_r($subjects2[6]); ?></p>
         </div>
     </div>
     </div>
