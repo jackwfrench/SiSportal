@@ -42,15 +42,15 @@ $day9 = array($subjects[32], $subjects[33], $subjects[34], $subjects[35]);
     <thead>
       <tr>
         <th>Period</th>
-        <th>Day1</th>
-        <th>Day2</th>
-        <th>Day3</th>
-        <th>Day4</th>
-        <th>Day5</th>
-        <th>Day6</th>
-        <th>Day7</th>
-        <th>Day8</th>
-        <th>Day9</th>
+        <th>Day 1</th>
+        <th>Day 2</th>
+        <th>Day 3</th>
+        <th>Day 4</th>
+        <th>Day 5</th>
+        <th>Day 6</th>
+        <th>Day 7</th>
+        <th>Day 8</th>
+        <th>Day 9</th>
       </tr>
     </thead>
     <tbody>

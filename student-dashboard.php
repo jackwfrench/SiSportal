@@ -1,11 +1,9 @@
 
 <?php
 session_start();
-require('functions.php');
 require('dbc.php');
 include('include.php');
 
-checkUser();
 
 //Data from database
 $stmt = $pdo->query("SELECT * from time_table where userID=".$_SESSION['userID']."");

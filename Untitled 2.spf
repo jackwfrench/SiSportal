@@ -47,30 +47,36 @@
 			<integer>1</integer>
 			<key>contentSelection</key>
 			<data>
-			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
-			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
-			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
-			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
-			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
-			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
-			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
-			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
-			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
-			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
-			AAAAAAAAAAAAAAABIw==
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClhub3RpY2VJRNIeHy0u
+			XxAPTlNNdXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5T
+			TXV0YWJsZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tl
+			eWVkQXJjaGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBL
+			AFIAWgBlAGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIA
+			wwDFAMoA1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEzATgBSgFO
+			AVcBXAFrAW8BdwF8AX8BkQGUAZkAAAAAAAACAQAAAAAAAAA6AAAA
+			AAAAAAAAAAAAAAABmw==
 			</data>
+			<key>contentSortCol</key>
+			<string>noticeID</string>
 			<key>contentSortColIsAsc</key>
 			<true/>
 			<key>contentViewport</key>
-			<string>{{0, 0}, {860, 536}}</string>
+			<string>{{1, 0}, {874, 536}}</string>
 			<key>isToolbarVisible</key>
 			<true/>
 			<key>queries</key>
-			<string>SELECT userID from time_table where day=1 and p1="12BUCA"</string>
+			<string>SELECT userID from time_table where day=5 and p1="12ANHA"</string>
 			<key>table</key>
-			<string>time_table</string>
+			<string>notices</string>
 			<key>view</key>
-			<string>SP_VIEW_CUSTOMQUERY</string>
+			<string>SP_VIEW_CONTENT</string>
 			<key>windowVerticalDividerPosition</key>
 			<real>200</real>
 		</dict>
@@ -83,6 +89,14 @@
 	<array/>
 	<key>queryHistory</key>
 	<array>
+		<string>SELECT userID from time_table where day=5 and p1="12ANHA"</string>
+		<string>SELECT * FROM users where userID = 'SELECT userID from time_table where day=5'</string>
+		<string>SELECT * FROM users where userID = 'SELECT userID from time_table where day=5 and p1="12ANHA"'</string>
+		<string>SELECT * FROM users 
+WHERE userID = 'SELECT userID from time_table where day=1 and p1="12BUCA"'</string>
+		<string>SELECT * FROM users 
+WHERE userID = "SELECT userID from time_table where day=1 and p1="12BUCA""</string>
+		<string>SELECT userID from time_table where day=1 and p1="12BUCA"</string>
 		<string>select * from users where UserID = 252</string>
 		<string>select * from time_table where UserID = 253</string>
 		<string>INSERT INTO `time_table` (`userID`, `day`, `p1`, `p2`, `p3`, `p4`)
@@ -128,13 +142,6 @@ VALUES
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8</string>
 		<string>SELECT assesment.assesmentID, assesment.classcode, assesment_name, assesment_file_url, c1, c2, c3, c1_mark, c2_mark, c3_mark, final_result, view_status date_given, date_due from assesment_results inner join assesment on assesment.assesmentID=assesment_results.assesmentID where assesment.assesmentID=1 and userID=4</string>
 		<string>SELECT assesment.assesmentID, assesment.classcode, assesment_name, assesment_file_url, c1, c2, c3, c1_mark, c2_mark, c3_mark, final result, view_status date_given, date_due from assesment_results inner join assesment on assesment.assesmentID=assesment_results.assesmentID where assesment.assesmentID=1 and userID=4</string>
-		<string>SELECT assesment.assesmentID, classcode, assesment_name, assesment_file_url, c1, c2, c3, c1_mark, c2_mark, c3_mark, final result, view_status date_given, date_due from assesment_results inner join assesment on assesment.assesmentID=assesment_results.assesmentID where assesment.assesmentID=1 and userID=4</string>
-		<string>SELECT assesmentID, classcode, assesment_name, assesment_file_url, c1, c2, c3, c1_mark, c2_mark, c3_mark, final result, view_status date_given, date_due from assesment_results inner join assesment on assesment.assesmentID=assesment_results.assesmentID where assesment.assesmentID=1 and userID=4</string>
-		<string>SELECT * from assesment_results inner join assesment on assesment.assesmentID=assesment_results.assesmentID where assesment.assesmentID=1 and userID=4</string>
-		<string>INSERT INTO assesment_results (assesmentID, classcode, userID, c1, c1_mark, c2, c2_mark, c3, c3_mark, final_result, view_status)
-VALUES (1, '12BUCA', 4, 'Kaps', 'A+', 'Communication', 'A+', 'Maps', 'A+', 'A+', 'p')</string>
-		<string>SELECT * FROM assesment_results</string>
-		<string>SELECT * from assesment_results inner join assesment on assesment.assesmentID=assesment_results.assesmentID where assesmentID=1 and userID=4</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>

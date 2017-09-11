@@ -1,0 +1,13 @@
+#title {
+  margin-left: 40px;
+}
+
+.student-box {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#student-text {
+  font-weight: normal;
+}
