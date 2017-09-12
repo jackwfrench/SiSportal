@@ -31,7 +31,7 @@ $stmt = $pdo->query("SELECT * FROM users where teacher_status != 1");
 
 while ($row = $stmt->fetch()) {
 
-  echo ("<tr><th id='student-text'>".$row['lastname'].", ".$row['firstname']."</th><th id='student-text>".$row['username']."</th><th>".$row['grad_year']."</th></tr>");
+  echo ("<tr><th id='student-text'>".$row['lastname'].", ".$row['firstname']."</th><th id='student-text'><a href='viewstudent.php?userID=".$row['userID']."'>".$row['username']."</a></th><th>".$row['grad_year']."</th></tr>");
 
 }
 

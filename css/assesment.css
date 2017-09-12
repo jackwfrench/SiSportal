@@ -1,0 +1,23 @@
+#table-main {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#title {
+  margin-left: 40px;
+}
+
+#assesment-text {
+  font-weight: normal;
+}
+
+#student-text-info {
+  font-weight: normal;
+  margin-left: 60px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#name-text {
+  font-weight: normal;
+}

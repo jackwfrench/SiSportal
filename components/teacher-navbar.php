@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img id='logo-image' src='images/logo.png'/></a>
+      <a class="navbar-brand" href="teacher-dashboard.php"><img id='logo-image' src='images/logo.png'/></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">

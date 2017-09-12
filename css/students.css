@@ -11,3 +11,14 @@
 #student-text {
   font-weight: normal;
 }
+
+#student-text-info {
+  margin-left: 60px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#profile-image {
+  border: 1px solid black;
+  margin-left: 40px;
+}
